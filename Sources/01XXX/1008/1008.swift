@@ -3,4 +3,4 @@ import Foundation
 
 let a = Double(readLine()!)!
 let b = Double(readLine()!)!
-print(a / b)
+print("a / b = \(a / b)")
