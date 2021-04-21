@@ -3,7 +3,6 @@
 //  01XXX
 //
 //  Created by kio on 2021/04/22.
-//
 
 import Foundation
 
