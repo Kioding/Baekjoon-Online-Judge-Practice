@@ -18,3 +18,4 @@ print(a * b)
 let userInput2 = readLine()!
 let userInputArray2 = userInput2.components(separatedBy: " ")
 print(Int(userInputArray2[0])! * Int(userInputArray2[1])!)
+
