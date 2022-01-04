@@ -23,7 +23,7 @@ print(c / d)
 
 // 풀이3
 let userInput3 = readLine()!
-let array3 = userInput2.components(separatedBy: " ").map { Double($0)! }
+let array3 = userInput3.components(separatedBy: " ").map { Double($0)! }
 let e = array3[0]
 let f = array3[1]
 print(e / f)
