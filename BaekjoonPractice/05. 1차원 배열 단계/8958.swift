@@ -7,6 +7,7 @@
 
 import Foundation
 
+// 풀이1
 let testCase = Int(readLine()!)!
 
 for _ in 0..<testCase {
@@ -16,7 +17,6 @@ for _ in 0..<testCase {
     
     guard let quizResult = readLine() else { break }
     let scoreArray = quizResult.map { $0 }
-
     
     for index in 0..<scoreArray.count {
         if scoreArray[index] == "O" && didSolvedProblemBefore == true {
@@ -33,3 +33,26 @@ for _ in 0..<testCase {
     }
     print(totalScore)
 }
+
+
+// 풀이2 - 불필요한 코드 삭제
+let testCase = Int(readLine()!)!
+
+for _ in 0..<testCase {
+    var totalScore: Int = 0
+    var tempScore: Int = 0
+
+    guard let quizResult = readLine() else { break }
+    let scoreArray = quizResult.map { $0 }
+
+    for index in 0..<scoreArray.count {
+        if scoreArray[index] == "O" {
+            tempScore += 1
+            totalScore += tempScore
+        } else {
+            tempScore = 0
+        }
+    }
+    print(totalScore)
+}
+
