@@ -13,12 +13,9 @@ let testCase = Int(readLine()!)!
 for _ in 0..<testCase {
     let userInput = readLine()!
     let intArray = userInput.components(separatedBy: .whitespaces).map { Int($0)! }
-    let studentsNumber = intArray[0]
-    var scoreSum = 0
     
-    for index in 1..<intArray.count {
-        scoreSum += intArray[index]
-    }
+    let studentsNumber = intArray[0]
+    var scoreSum = intArray.reduce(0, +) - studentsNumber
     
     let average = scoreSum / studentsNumber
     var overAverageStudents = 0
